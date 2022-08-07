@@ -14,12 +14,12 @@
 }
 
 
-.button2 {
+.project-section__button {
   transition: color, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.main-window__button:hover{fill: var(--active-button-color);
+.main-window__button:hover{background: #188ce8;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
@@ -316,7 +316,7 @@ a {
 
 .main-window__button:focus {
   color: var(--active-button-color);
-  transition: 250ms;
+  transition: color, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -699,7 +699,7 @@ a {
   padding-bottom: 103px;
 }
 
-.container-button {
+.project-section__list {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -708,7 +708,7 @@ a {
 
 }
 
-.button2 {
+.project-section__button {
   font-style: normal;
   font-style: normal;
   font-weight: 500;
@@ -735,7 +735,7 @@ a {
 
 }
 
-.container-image {
+.project-section__image-list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -744,14 +744,14 @@ a {
   margin-bottom: 0;
 }
 
-.portfolio-item {
+.project-section__portfolio-item {
   position: relative;
   overflow: hidden;
 }
-.portfolio-item:hover .overlay{transform: translate(0%);}
+.project-section__portfolio-item:hover .project-section__overlay{transform: translateY(0%);}
 
 /**OVERLAY*/
-.overlay {
+.project-section__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -770,7 +770,7 @@ a {
 
 }
 
-.overlay-text {
+.project-section__overlay-text {
   text-align: left;
   color: white;
   font-style: normal;
@@ -782,7 +782,7 @@ a {
 }
 
 
-.image-shadow:hover {
+.project-section__image-shadow:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transition: 250ms;
@@ -791,12 +791,12 @@ a {
 
 }
 
-.image-shadow {
+.project-section__image-shadow{
   transition: color, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-name-container {
+.project-section__name-container {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -809,7 +809,7 @@ a {
   ;
 }
 
-.button2:hover {
+.project-section__button:hover {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -819,7 +819,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button2:focus {
+.project-section__button:focus {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -827,7 +827,7 @@ a {
   color: #ffffff;
 }
 
-.button-current {
+.project-section__button--current {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -837,7 +837,7 @@ a {
 
 
 
-.position-name {
+.project-section__position-name {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36/18);
@@ -845,7 +845,7 @@ a {
   color: #212121;
 }
 
-.position-type {
+.project-section__position-type {
   font-style: normal;
   font-size: 16px;
   line-height: calc(30/16);
@@ -880,7 +880,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.modal-btm {
+.modal__btm {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -898,12 +898,12 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btm:hover {
+.modal__btm:hover {
   fill: var(--active-button-color);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-header{ display: block;
+.modal__header{ display: block;
   width: 448px;
   height: 23px;
   left: 576px;
@@ -921,11 +921,11 @@ a {
 margin-bottom: 12px;
 }
 
-.contract{ text-decoration: underline; color: var(--active-button-color); text-underline-position: under;}
-.form-register{display: block; margin-bottom: 20px; text-align: center;}
-.agreeicon{justify-content: center; align-items:baseline}
-.register-form-agree{display: flex; margin-top: 20px; align-content: center; justify-content: center; gap: 8px; margin-bottom: 30px;}  
-.submit-btn{ display:inline-flex; align-items: center; justify-content: center; padding: 10px 56px; min-width: 200px; margin-bottom: 42px;
+.modal__contract-link{ text-decoration: underline; color: var(--active-button-color); text-underline-position: under;}
+.modal__form-register{display: block; margin-bottom: 20px; text-align: center;}
+.modal__icon--agree{justify-content: center; align-items:baseline}
+.modal__register-form--agree{display: flex; margin-top: 20px; align-content: center; justify-content: center; gap: 8px; margin-bottom: 30px;}  
+.modal__submit-btn{ display:inline-flex; align-items: center; justify-content: center; padding: 10px 56px; min-width: 200px; margin-bottom: 42px;
   min-height: 50px ; background: #2196F3; color: white;
   border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -935,28 +935,28 @@ margin-bottom: 12px;
   font-size: 16px;
   line-height: 30px;
 cursor: pointer; letter-spacing: 0.06em;}
-.submit-btn:hover{background: #188ce8;
+.modal__submit-btn:hover{background: #188ce8;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
   .modal-form{ display:block; text-align: center;}
-  .write-here { width: 100%;
+  .modal__input { width: 100%;
   padding-left: 42px; border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px; cursor: pointer; min-height: 40px;
   outline: none;}
-  .write-here:hover{ border-color: var(--active-button-color);}
-  .write-here:focus{border-color:var(--active-button-color);}
-  .write-here:not(:placeholder-shown){border-color: #188ce8;}
-  .agreeicon:focus{fill:currentColor}
+  .modal__input:hover{ border-color: var(--active-button-color);}
+  .modal__input:focus{border-color:var(--active-button-color);}
+  .modal__input:not(:placeholder-shown){border-color: #188ce8;}
+  .modal__icon--agree:focus{fill:currentColor}
   
-.modal-icon{fill: currentColor;}
-  .modal-comment{padding-top:12px;padding-left: 16px; padding-right: 16px; padding-bottom: 12px; min-width: 448px; min-height: 120px ; resize: none;}
-  .register-form-wrap{display: block; position: relative; padding-bottom: 0;
+.modal__icon{fill: currentColor;}
+  .modal__comment{padding-top:12px;padding-left: 16px; padding-right: 16px; padding-bottom: 12px; min-width: 448px; min-height: 120px ; resize: none;}
+  .modal__register-form-wrap{display: block; position: relative; padding-bottom: 0;
   }
   
-  .register-form-wrap:last-child{margin-bottom: 0;}
-.modal-icon{position: absolute; left: 12px;  bottom: 11px; justify-self: center;margin-left: auto;
+  .modal__register-form-wrap:last-child{margin-bottom: 0;}
+.modal__icon{position: absolute; left: 12px;  bottom: 11px; justify-self: center;margin-left: auto;
   margin-right: auto; }
-.line-name{ display:flex;align-items: left; margin-top: 10px; margin-bottom: 4px; font-family: 'Roboto';
+.modal__line-name{ display:flex;align-items: left; margin-top: 10px; margin-bottom: 4px; font-family: 'Roboto';
 
   font-style: normal;
   font-weight: 400;
@@ -972,15 +972,15 @@ cursor: pointer; letter-spacing: 0.06em;}
   visibility: hidden;
   pointer-events: none;
 }
-.write-here:focus+.modal-icon{fill: #188ce8 }
+.modal__input:focus+.modal__icon{fill: #188ce8 }
 
-.register-form-wrap:hover{border-color: #188ce8; color: #188ce8;}
-.register-form-wrap:focus{border-color: #188ce8; color: #188ce8;}
-.check{opacity: 0; transition: opacity,250ms; }
-.write-checkbox:checked + .agreeicon .uncheck{opacity: 0;}
-.write-checkbox:checked + .agreeicon .check{opacity: 1;}
-.write-checkbox{opacity: 0;}
-.agree-point{ display: flex; user-select: none; padding: 0%; margin: 0; font-family: 'Roboto';
+.modal__register-form-wrap:hover{border-color: #188ce8; color: #188ce8;}
+.modal__register-form-wrap:focus{border-color: #188ce8; color: #188ce8;}
+.modal__check{opacity: 0; transition: opacity,250ms; }
+.modal__checkbox:checked + .modal__icon--agree .modal__uncheck{opacity: 0;}
+.modal__checkbox:checked + .modal__icon--agree .modal__check{opacity: 1;}
+.modal__checkbox{opacity: 0;}
+.modal__agree-point{ display: flex; user-select: none; padding: 0%; margin: 0; font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1028,4 +1028,4 @@ cursor: pointer;}
       transition: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
   .subscribe___btm-icon{margin-left: 10px;}
-      .agreeicon{justify-content: center; align-items: center; align-self: center;}
+      .modal__icon--agree{justify-content: center; align-items: center; align-self: center;}

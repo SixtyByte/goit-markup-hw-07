@@ -596,71 +596,75 @@
         </div>
       </div>
     </footer>
-    <!--Modal-window-->
+    <!--
+      |============================
+      | Modal window
+      |============================
+    -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-<button type="button" class="modal-btm" data-modal-close><svg class="x-icon-btm" width="18" height="18"><use href="./images/icons.svg#Cross"></use></svg></button>
+<button type="button" class="modal__btm" data-modal-close><svg  width="18" height="18"><use href="./images/icons.svg#Cross"></use></svg></button>
 <form name="order-servis" autocomplete="on" novalidate class="modal-form">
-  <strong class="modal-header" >Оставьте свои данные, мы вам перезвоним</strong>
-  <div class="form-register" role="group">
-  <label class="register-form-wrap">
-    <span class="line-name">
+  <strong class="modal__header" >Оставьте свои данные, мы вам перезвоним</strong>
+  <div class="modal__form-register" role="group">
+  <label class="modal__register-form-wrap">
+    <span class="modal__line-name">
       Имя
     </span>
-  <input class="write-here" type="text"  placeholder="John Doy"  name="name" autofocus> 
+  <input class="modal__input" type="text"  placeholder="John Doy"  name="name" autofocus> 
   
-  <svg width="18" height="18" class="modal-icon">
+  <svg width="18" height="18" class="modal__icon">
   <use 
   href="./images/icons.svg#person-modal">
 
   </use>
   </svg>
   </label> 
-  <label  class="register-form-wrap" >
-    <span class="line-name">Телефон</span> 
-  <input class="write-here" type="tel" name="telephone" placeholder="+380">
+  <label  class="modal__register-form-wrap" >
+    <span class="modal__line-name">Телефон</span> 
+  <input class="modal__input" type="tel" name="telephone" placeholder="+380">
  
-  <svg width="18" height="18" class="modal-icon">
+  <svg width="18" height="18" class="modal__icon">
 <use 
 href="./images/icons.svg#phone-modal">
 </use>
   </svg>
 </label>
-  <label  class="register-form-wrap">
-    <span class="line-name">
+  <label  class="modal__register-form-wrap">
+    <span class="modal__line-name">
       Почта
         </span>
-  <input class="write-here" type="email"  mame="email" placeholder="еmail@example.com">
+  <input class="modal__input" type="email"  mame="email" placeholder="еmail@example.com">
   
-  <svg width="18" height="18" class="modal-icon">
+  <svg width="18" height="18" class="modal__icon">
     <use 
     href="./images/icons.svg#email-modal">
   </use>
   </svg>
 </label>
-<span class="line-name">
+<span class="modal__line-name">
   Комментарий
 </span>
-  <label  class="register-form-wrap">
+  <label  class="modal__register-form-wrap">
   
-  <textarea class="write-here modal-comment" name="textarea" placeholder="Введите текст"></textarea>
+  <textarea class="write-here modal__comment" name="textarea" placeholder="Введите текст"></textarea>
 
 </label>
 </div>
- <label class="register-form-agree">
- <input class="write-checkbox visually-hidden"  type="checkbox" value="agree" >
- <svg  class= "agreeicon" width="16" height="15">
-  <use class="check" href="./images/icons.svg#icon-check">
+ <label class="modal__register-form--agree">
+ <input class="modal__checkbox visually-hidden"  type="checkbox" value="agree" >
+ <svg  class= "modal__icon--agree" width="16" height="15">
+  <use class="modal__check" href="./images/icons.svg#icon-check">
 
   </use>
-  <use class="uncheck" href="./images/icons.svg#icon-uncheck">
+  <use class="modal__uncheck" href="./images/icons.svg#icon-uncheck">
 </use>
  </svg>
- <span class="agree-point">Соглашаюсь с рассылкой и принимаю&nbsp; 
-  <a class="contract link" href="">Условия договора</a>
+ <span class="modal__agree-point">Соглашаюсь с рассылкой и принимаю&nbsp; 
+  <a class="modal__contract-link " href="">Условия договора</a>
  </span>
   </label> 
-  <button type="submit" class="submit-btn">Отправить</button>
+  <button type="submit" class="modal__submit-btn">Отправить</button>
 </form>
 </div>
   </div>
